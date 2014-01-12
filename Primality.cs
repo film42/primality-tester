@@ -32,7 +32,6 @@ namespace project1 {
       }
     }
 
-
     public BigInteger uniformNumber(BigInteger max) {
       double bit_count = BigInteger.Log(max, 2);
       int length = (int)Math.Ceiling(bit_count);

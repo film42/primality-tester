@@ -11,3 +11,5 @@
 _ReSharper.*
 *.resharper
 Ankh.NoLoad
+target/
+target/*

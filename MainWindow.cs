@@ -18,9 +18,15 @@ namespace project1 {
     private void buttonSolve(object sender, EventArgs e) {
       BigInteger num = BigInteger.Parse(inputNumber.Text);
       Primality logic = new Primality();
-      bool result = logic.testPrimality(num, 10);
+      bool result = logic.testPrimality(num, 20);
 
-      probabilityTextBox.Text = result.ToString() + " - Probability of " + logic.determineProbability(10) + "%";
+      if (result) {
+        probabilityTextBox.Text = result.ToString() + " - Probability of " 
+                                                    + logic.determineProbability(20)
+                                                    + "%";
+      } else {
+        probabilityTextBox.Text = result.ToString();
+      }
     }
   }
 }
